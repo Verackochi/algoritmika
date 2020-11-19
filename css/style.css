@@ -1,6 +1,6 @@
 html {
     box-sizing: border-box;
-    
+
 }
 
 *,
@@ -37,12 +37,11 @@ body {
     background-color: #1A142D;
     width: 310px;
     padding: 18px 18px 46px;
-    
-} 
+
+}
 
 .cart__title {
-    
-    font-weight: 48px;
+    font-size: 48px;
     margin-top: 38px;
 }
 
@@ -58,17 +57,41 @@ body {
 
 .cart__social {
     margin-top: 19px;
-    position: relative;
-    top:0; 
+    margin-right: 30px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+
 }
 
-.cart__social-link {
-    margin-left: 7px;  
+@keyframes bounce {
+
+    0%,
+    20%,
+    60%,
+    100% {
+        transform: translateY(0);
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-20px);
+        transform: translateY(-20px);
+    }
+
+    80% {
+        transform: translateY(-10px);
+        transform: translateY(-10px);
+    }
 }
 
-.cart__social-link:hover .cart__social-icon {
-    position: absolute;
-    top: -14px;  
+
+.social__item {
+    margin-left: 7px;
+}
+
+.social__item:hover  {
+    animation: bounce 1s;
 }
 
 .heroes__life {
@@ -79,25 +102,31 @@ body {
     margin: 20px 0 7px;
 }
 
+.work,
+.education {
+    padding: 15px;
+}
+
 .work__item-name--color,
 .education__item-name {
     color: #FF3131;
 }
 
 .heroes__moments {
+    padding-left: 20px;
     margin-top: 87px;
 }
 
 .moments {
-    padding: 0; 
+    padding: 0;
 }
 
 .moments__item {
     list-style: none;
     position: relative;
     top: 0;
-   left: 0;
-   overflow: hidden;
+    left: 0;
+    overflow: hidden;
 }
 
 
@@ -107,7 +136,7 @@ body {
     background-color: #1A142D;
     color: #fff;
     font-size: 12px;
-    padding:5px 3px 10px 15px;
+    padding: 5px 1px 20px 15px;
     position: absolute;
     top: 220px;
     left: 0;
@@ -115,11 +144,6 @@ body {
 
 .moments__item:hover .moments__item-text {
     position: absolute;
-    top: 180px;
-    transition: all 1s ;
+    top: 170px;
+    transition: all 2s;
 }
-
-
-    
-
-
