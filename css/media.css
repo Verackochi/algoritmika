@@ -1,1 +1,41 @@
-/*исли нужно сделаю мобильную верстку*/
+/* Экстрамалые девайсы («телефоны», < 576px) */
+@media (max-width: 575.98px) {
+    
+}
+
+/* Малые девайсы («ландшафтные», < 768px) */
+@media (max-width: 767.98px) {
+    .heroes__info {
+        display: inline-block;
+        
+    }
+}
+
+@media (max-width: 952.98px) {
+    .heroes__info {
+        display: inline-block;
+    }  
+    
+    .heroes__life {
+        font-size: 18px;
+        margin-top: 25px;
+    }
+}
+
+/* Средние девайсы («таблетки», < 992px) */
+@media (max-width: 991.98px) {
+    .moments {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .moments__item {
+        display: block;
+        margin: 10px 35px;
+    }
+}
+
+/* Большие девайсы (большие десктопы, < 1200px) */
+@media (max-width: 1199.98px) {
+    
+}

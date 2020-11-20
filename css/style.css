@@ -90,7 +90,7 @@ body {
     margin-left: 7px;
 }
 
-.social__item:hover  {
+.social__item:hover {
     animation: bounce 1s;
 }
 
